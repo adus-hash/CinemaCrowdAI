@@ -12,11 +12,11 @@ It is artificially made, consist of 7 variables and first 5 samples look like th
 
 |     |    Title   |     Genre | Release Year |    Rating | Duration | Ticket Price (€) | Month of the Year | Attendance (%) |
 |-----|------------|-----------|--------------|-----------|----------|------------------|-------------------|----------------|
-|0    |  Film 1    | Romance   |      2007    | 3.700000  |     77   |          5.11    |        April      |       41       |
-|1    |  Film 2    |  Sci-Fi   |      1963    | 2.300000  |     71   |          6.73    |     November      |       10       |
-|2    |  Film 3    |  Comedy   |      1979    | 7.800000  |    158   |         11.07    |         July      |       28       |
-|3    |  Film 4    |  Horror   |      1978    | 3.277309  |    119   |          5.35    |         July      |       57       |
-|4    |  Film 5    |  Action   |      2002    | 3.557263  |     99   |          8.28    |      January      |       56       |
+|0    |  Film 1    | Romance   |      2007    | 3.70      |     77   |          5.11    |        April      |       41       |
+|1    |  Film 2    |  Sci-Fi   |      1963    | 2.30      |     71   |          6.73    |     November      |       10       |
+|2    |  Film 3    |  Comedy   |      1979    | 7.80      |    158   |         11.07    |         July      |       28       |
+|3    |  Film 4    |  Horror   |      1978    | 3.27      |    119   |          5.35    |         July      |       57       |
+|4    |  Film 5    |  Action   |      2002    | 3.55      |     99   |          8.28    |      January      |       56       |
 
 Our target variable is "Attendance (%)" which we aim to predict with our model using the other variables, hoever here are steps we need to do at first:
   - We need to encode string data into numeric
@@ -102,7 +102,7 @@ A decision tree splits the dataset into smaller subsets based on feature values,
 
     - Prone to overfitting, especially with deep trees
 
-    - Sensitive to small changes in data (high variance
+    - Sensitive to small changes in data (high variance)
 
 
 ## Random Forest
@@ -155,5 +155,8 @@ Measures the average absolute difference between the predicted values and the ac
 |New film 3 |   2    | 2023 |      45.88        |      62.0       |     46.54      | 37.25 |
 |New film 4 |   9    | 1974 |      42.38        |      26.0       |     29.64      | 36.97 |
 
+In this table we can compare the MSE values, the worst result is from the SVM model, which may be caused by insufficient optimization of the model, the second worst is Linear Regression likely due to the lack of sufficiently linearly dependent variables in the dataset, on the other hand, the Decision Tree stands out possibly because it is overfitted, the Random Forest performed reasonably well providing the most reliable results with minimal deviations. 
 
 
+### Conclusion
+In this project our goals were predicting cinema attendance and comparing machine learning algorithms. Through dataset analysis we identified 'Rating' and 'Release Year' as the two most highly correlated variables. However, despite that it wasn't enough good as we can see in the Mean Squared Error of the models. The best-performing algorithms were Decision Tree and Random Forest (though the Decision Tree may be overfitted), while Linear Regression and Support Vector Machine performed the worst. For this specific prediction and dataset I would personally choose Random Forest, as it provides the most reliable results with minimal deviations.
