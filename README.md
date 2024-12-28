@@ -27,12 +27,22 @@ df.fillna(0, inplace=True)
 ```
 Then we calculate covariance and correlation using .cov() and .corr() methods, if we look at covariance, it tells us how variables behave linearly with respect to each other. In our case, the two most linearly related variables are 'Release Year' and 'Attendance (%)', as well as 'Movie Duration' and 'Attendance (%)'. When the release year of a movie increases, cinema attendance rises sharply, whereas when the movie duration increases, attendance decreases. For better interpretation of covariance and dependencies, we will use correlation, if we look at the table (+1 - Perfect positive linear relationship, -1 Perfect negative linear relationship, 0 - No linear relationship) 'Release Year' and 'Rating' have the highest correlation with attendance, so we will select them as input variables for our model.
 
-|    Covariance   |   Attendance  |                      |   Correlation   |  Attendance  |
-|-----------------|---------------|                      |-----------------|--------------|
-|Genre            |     -3.182462 |                      |Attendance (%)   |     1.000000 |
-|Release Year     |    183.212470 |                      |Release Year     |      0.368998|
-|Rating           |     20.773803 |                      |Rating           |      0.305451|
-|Duration         |    -93.818008 |                      |Genre            |     -0.042216|
-|Ticket Price (€) |     -8.729587 |                      |Duration         |     -0.112921|
-|Month of the Year|    -11.000959 |                      |Ticket Price (€) |    -0.118620 |
-                                                         |Month of the Year|   -0.124997  |
+|    Covariance   |   Attendance  |
+|-----------------|---------------|
+|Genre            |     -3.182462 |
+|Release Year     |    183.212470 |                      
+|Rating           |     20.773803 |
+|Duration         |    -93.818008 |
+|Ticket Price (€) |     -8.729587 |
+|Month of the Year|    -11.000959 |
+                                                         
+
+|   Correlation   |  Attendance  |
+|-----------------|--------------|
+|Attendance (%)   |     1.000000 |
+|Release Year     |      0.368998|
+|Rating           |      0.305451|
+|Genre            |     -0.042216|
+|Duration         |     -0.112921|
+|Ticket Price (€) |    -0.118620 |
+|Month of the Year|   -0.124997  |
