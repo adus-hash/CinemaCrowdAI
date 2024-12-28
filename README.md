@@ -86,7 +86,7 @@ The equation it models is:
 
 ### Limitations
 
-    - Struggles with complex, non-linear relationships
+    - Struggles with complex non-linear relationships
 
 
 ## Decision Tree
@@ -103,3 +103,36 @@ A decision tree splits the dataset into smaller subsets based on feature values,
     - Prone to overfitting, especially with deep trees
 
     - Sensitive to small changes in data (high variance
+
+
+## Random Forest
+Random forest builds multiple decision trees and combines their outputs, each tree is trained on a random subset of the data and features (a process called bagging)
+
+### When to Use
+
+    - For large datasets with complex non-linear relationships
+
+    - To reduce overfitting compared to a single decision tree
+
+### Limitations
+
+    - Computationally expensive for large datasets
+
+
+## Support Vector Machine (SVM)
+Finds the optimal hyperplane that maximizes the margin (distance) between classes (for classification) or minimizes errors (for regression, called SVR), it uses kernel functions (e.g., linear, polynomial, radial basis function (RBF)) to handle non-linear relationships by transforming data into a higher-dimensional space
+
+### When to Use
+
+    - For datasets with small to medium sizes and complex non-linear relationships
+
+    - Works well in high-dimensional spaces (many features)
+
+### Limitations
+
+    - Computationally expensive for large datasets
+
+    - Harder to interpret compared to simpler models like linear regression
+
+
+## Project results
