@@ -31,7 +31,7 @@ df[["Month of the Year", "Genre"]] = encoder.fit_transform(df[["Month of the Yea
 
 df.fillna(0, inplace=True)
 ```
-Then we calculate covariance and correlation using .cov() and .corr() methods, if we look at covariance, it tells us how variables behave linearly with respect to each other. In our case, the two most linearly related variables are 'Release Year' and 'Attendance (%)', as well as 'Movie Duration' and 'Attendance (%)'. When the release year of a movie increases, cinema attendance rises sharply, whereas when the movie duration increases, attendance decreases. 
+Then we calculate covariance and correlation using .cov() and .corr() methods, if we look at covariance, it tells us how variables behave linearly with respect to each other. In our case the two most linearly related variables are 'Release Year' and 'Attendance (%)', as well as 'Movie Duration' and 'Attendance (%)'. When the release year of a movie increases, cinema attendance rises sharply, whereas when the movie duration increases, attendance decreases. 
 For better interpretation of covariance and dependencies, we will use correlation, if we look at the table (+1 - Perfect positive linear relationship, -1 Perfect negative linear relationship, 0 - No linear relationship) 'Release Year' and 'Rating' have the highest correlation with attendance, so we will select them as input variables for our model.
 
 |    Covariance   |   Attendance  |
@@ -159,4 +159,4 @@ In this table we can compare the MSE values, the worst result is from the SVM mo
 
 
 ### Conclusion
-In this project our goals were predicting cinema attendance and comparing machine learning algorithms. Through dataset analysis we identified 'Rating' and 'Release Year' as the two most highly correlated variables. However, despite that it wasn't enough good as we can see in the Mean Squared Error of the models. The best-performing algorithms were Decision Tree and Random Forest (though the Decision Tree may be overfitted), while Linear Regression and Support Vector Machine performed the worst. For this specific prediction and dataset I would personally choose Random Forest, as it provides the most reliable results with minimal deviations.
+In this project our goals were predicting cinema attendance and comparing machine learning algorithms. Through dataset analysis we identified 'Rating' and 'Release Year' as the two most highly correlated variables. However, despite that it wasn't good enough as we can see in the Mean Squared Error of the models. The best-performing algorithms were Decision Tree and Random Forest (though the Decision Tree may be overfitted), while Linear Regression and Support Vector Machine performed the worst. For this specific prediction and dataset I would personally choose Random Forest, as it provides the most reliable results with minimal deviations.
