@@ -25,7 +25,8 @@ df[["Month of the Year", "Genre"]] = encoder.fit_transform(df[["Month of the Yea
 
 df.fillna(0, inplace=True)
 ```
-Then we calculate covariance and correlation using .cov() and .corr() methods, if we look at covariance, it tells us how variables behave linearly with respect to each other. In our case, the two most linearly related variables are 'Release Year' and 'Attendance (%)', as well as 'Movie Duration' and 'Attendance (%)'. When the release year of a movie increases, cinema attendance rises sharply, whereas when the movie duration increases, attendance decreases. For better interpretation of covariance and dependencies, we will use correlation, if we look at the table (+1 - Perfect positive linear relationship, -1 Perfect negative linear relationship, 0 - No linear relationship) 'Release Year' and 'Rating' have the highest correlation with attendance, so we will select them as input variables for our model.
+Then we calculate covariance and correlation using .cov() and .corr() methods, if we look at covariance, it tells us how variables behave linearly with respect to each other. In our case, the two most linearly related variables are 'Release Year' and 'Attendance (%)', as well as 'Movie Duration' and 'Attendance (%)'. When the release year of a movie increases, cinema attendance rises sharply, whereas when the movie duration increases, attendance decreases. 
+For better interpretation of covariance and dependencies, we will use correlation, if we look at the table (+1 - Perfect positive linear relationship, -1 Perfect negative linear relationship, 0 - No linear relationship) 'Release Year' and 'Rating' have the highest correlation with attendance, so we will select them as input variables for our model.
 
 |    Covariance   |   Attendance  |
 |-----------------|---------------|
@@ -46,3 +47,15 @@ Then we calculate covariance and correlation using .cov() and .corr() methods, i
 |Duration         |     -0.112921|
 |Ticket Price (€) |    -0.118620 |
 |Month of the Year|   -0.124997  |
+
+For additional information about the dataset, we can use the .describe() method
+|            | Rating | Release Year |
+|------------|--------|--------------|
+|count       | 1000.0 |  1000.0      |
+|mean        | 5.608  |  1991.413    |
+|std         | 2.606  |  19.031      |
+|min         | 1.0    |  1960.0      |
+|25%         | 3.460  |  1974.0      |
+|50%         | 5.630  |  1991.0      |
+|75%         | 7.90   |  2008.0      |
+|max         | 10.0   |  2024.0      |
