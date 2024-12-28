@@ -31,7 +31,7 @@ new_films = pandas.DataFrame([[8, 2015], [5, 1999], [2, 2023], [9, 1974]], colum
 """
 output:
     > 1 - linearny vztah premennych
-    < 1 - zaporny linearny vztah
+    < -1 - zaporny linearny vztah
     ~ 0 - nelinearny vztah
 """
 covariance = df.cov()
