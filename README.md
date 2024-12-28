@@ -73,7 +73,33 @@ In our project, we used 4 algorithms: Linear regression, Random Forest, Decision
 
 ## Linear regression
 It fits a straight line (or hyperplane in our case) to minimize the error (mean squared error in our case)
+
 The equation it models is:
+
     - y = w1x1 + x2x2 + .. + wnxn + b
 
 ### When to use
+
+    - When you expect a linear relationship between inputs and outputs
+
+    - When you have a simple dataset
+
+### Limitations
+
+    - Struggles with complex, non-linear relationships
+
+
+## Decision Tree
+A decision tree splits the dataset into smaller subsets based on feature values, forming a tree-like structure, the leaves represent the predictions, while the internal nodes represent decisions (splits)
+
+### When to use
+
+    - For non-linear relationships or datasets with complex structures
+
+    - Suitable for datasets with both numerical and string features
+
+### Limitations
+
+    - Prone to overfitting, especially with deep trees
+
+    - Sensitive to small changes in data (high variance
