@@ -136,3 +136,24 @@ Finds the optimal hyperplane that maximizes the margin (distance) between classe
 
 
 ## Project results
+When evaluating the results we will consider the metrics Mean Squared Error, Mean Absolute Error, one sample from the dataset, and four newly created samples as {Rating, Release Year}.
+
+### Mean Squared Error (MSE)
+MSE measures the average squared difference between the predicted values and the actual values, smaller MSE indicates that the model's predictions are closer to the actual values
+
+### Mean Absolute Error (MAE)
+Measures the average absolute difference between the predicted values and the actual values, simply it tells you how far your predictions are from the true values on average
+
+### Results
+|           | Rating | Year | Linear Regression | Decision Tree   | Random Forest  |  SVM  |
+|-----------|--------|------|-------------------|-----------------|----------------|-------|
+|   MSE     |        |      |       527         |        16       |      97        |  692  |
+|   MAE     |        |      |       19          |        0        |       7        |   21  |
+|  Film 1   |   2.3  | 1963 |      16.96        |      10.0       |     15.13      | 36.90 |
+|New film 1 |   8    | 2015 |      59.77        |      40.0       |     42.49      | 37.20 |
+|New film 2 |   5    | 1999 |      42.89        |      45.0       |     36.08      | 37.11 |
+|New film 3 |   2    | 2023 |      45.88        |      62.0       |     46.54      | 37.25 |
+|New film 4 |   9    | 1974 |      42.38        |      26.0       |     29.64      | 36.97 |
+
+
+
