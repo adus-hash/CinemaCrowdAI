@@ -48,7 +48,7 @@ For better interpretation of covariance and dependencies, we will use correlatio
 |Ticket Price (€) |    -0.118620 |
 |Month of the Year|   -0.124997  |
 
-For additional information about the dataset, we can use the .describe() method
+For additional information about the 'Rating' and 'Release Year', we can use the .describe() method:
 |            | Rating | Release Year |
 |------------|--------|--------------|
 |count       | 1000.0 |  1000.0      |
