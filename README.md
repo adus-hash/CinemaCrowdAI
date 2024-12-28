@@ -10,6 +10,14 @@ Project goals are:
 
 It is artificially made, consist of 7 variables and first 5 samples look like this:
 
+|     |    Title   |     Genre | Release Year |    Rating | Duration | Ticket Price (€) | Month of the Year | Attendance (%) |
+|-----|------------|-----------|--------------|-----------|----------|------------------|-------------------|----------------|
+|0    |  Film 1    | Romance   |      2007    | 3.700000  |     77   |          5.11    |        April      |       41       |
+|1    |  Film 2    |  Sci-Fi   |      1963    | 2.300000  |     71   |          6.73    |     November      |       10       |
+|2    |  Film 3    |  Comedy   |      1979    | 7.800000  |    158   |         11.07    |         July      |       28       |
+|3    |  Film 4    |  Horror   |      1978    | 3.277309  |    119   |          5.35    |         July      |       57       |
+|4    |  Film 5    |  Action   |      2002    | 3.557263  |     99   |          8.28    |      January      |       56       |
+
 <img width="667" alt="Snímka obrazovky 2024-12-27 o 22 24 42" src="https://github.com/user-attachments/assets/05212e09-6990-44ff-bb10-0fcf1ae1bd85" />
 
 Our target variable is "Attendance (%)" which we aim to predict with our model using the other variables, hoever here are steps we need to do at first:
