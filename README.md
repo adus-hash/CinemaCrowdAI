@@ -18,7 +18,7 @@ It is artificially made, consist of 7 variables and first 5 samples look like th
 |3    |  Film 4    |  Horror   |      1978    | 3.27      |    119   |          5.35    |         July      |       57       |
 |4    |  Film 5    |  Action   |      2002    | 3.55      |     99   |          8.28    |      January      |       56       |
 
-Our target variable is "Attendance (%)" which we aim to predict with our model using the other variables, hoever here are steps we need to do at first:
+Our target variable is "Attendance (%)" which we aim to predict with our model using the other variables, however here are steps we need to do at first:
   - We need to encode string data into numeric
   - Fill missing datas with 0's
   - Covariance, Correlation
